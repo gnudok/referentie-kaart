@@ -19,6 +19,7 @@
 \documentclass[10pt]{article}
 \usepackage{fixltx2e}
 \usepackage[orthodox,l2tabu,abort]{nag}
+\usepackage{amsmath}
 
 % Page layout
 \usepackage[landscape,margin=0.5in]{geometry}
@@ -66,25 +67,50 @@
 \begin{multicols}{3}
 	\maketitle
 
+	\section{LXDE Desktop}
+	\begin{ttdesc}[labelwidth=\widthof{\texttt{ALT-F10}}]
+	\item[ALT-F10] Maximaliseer window
+	\end{ttdesc}
 	\section{Toepassingen openen}
-	\begin{ttdesc}[labelwidth=\widthof{\texttt{WIN+SHIFT+E}}]
-	\item[WIN+E] Bestandsbeheer
-	\item[WIN+C] Chromium browser
-	\item[WIN+I] Iceweasel browser
-	\item[WIN+T] Terminal
-	\item[CRTL-D] Verlaat terminal
-	\item[WIN+V] VLC-speler
+	\begin{ttdesc}[labelwidth=\widthof{\texttt{WIN-SHIFT+E}}]
+	\item[WIN-E] Bestandsbeheer
+	\item[WIN-C] Chromium browser
+	\item[WIN-I] Iceweasel browser
+	\item[WIN-T] Terminal
+	\item[CTRL-D] Verlaat terminal
+	\item[WIN-V] VLC-speler
+	\end{ttdesc}
+	\section{Generiek}
+	\begin{ttdesc}[labelwidth=\widthof{\texttt{SHIFT+Tab}}]
+	\item[Tab] Focus volgend schermcomponent
+	\item[SHIFT-Tab] Focus vorig schermcomponent
+	\item[Space] Druk knop in
+	\item[ALT-$\downarrow$] Open dropdown lijst
+	\end{ttdesc}
+	\section{Chromium}
+	\begin{ttdesc}[labelwidth=\widthof{\texttt{CTRL+SHIFT-Tab}}]
+	\item[CTRL-L] Focus locatiebalk
+	\item[CTRL-T] Open nieuw tabblad
+	\item[CTRL-W] Sluit huidig tabblad
+	\item[CTRL-Tab] Volgend tabblad
+	\item[CTRL-SHIFT-Tab] Vorig tabblad
+	\item[CTRL-D] Bladwijzer maken
+	\item[CTRL-F] Zoeken in de pagina
+	\item[CTRL-SHIFT-B] Bladwijzerbalk zichtbaarheid
 	\end{ttdesc}
 	\section{APOD-BG}
-	\begin{ttdesc}[labelwidth=\widthof{\texttt{WIN+SHIFT+E}}]
+	\begin{ttdesc}[labelwidth=\widthof{\texttt{WIN-SHIFT+E}}]
 	\item[ALT-CTRL-M] Wissel view-mode
 	\item[ALT-CTRL-J] Volgende achtergrond
 	\item[ALT-CTRL-K] Vorige achtergrond
+	\item[ALT-CTRL-R] Random eerdere achtergrond
+	\item[ALT-CTRL-I] Open APOD-pagina voor achtergrond
+	\item[ALT-CTRL-A] Open APOD-pagina
 	\end{ttdesc}
 
-	\section{Filler material}
+	%\section{Filler material}
 
-	\lipsum
+	%\lipsum
 
 	\noindent Copyright \textcopyright{} \thedate{} \theauthor{}
 
